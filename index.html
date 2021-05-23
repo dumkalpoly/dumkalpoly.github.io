@@ -5,11 +5,746 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home | Dumkal Polytechnic</title>
+    <meta name="description" content="Dumkal Polytechnic" />
+    <meta name="keywords" content="Dumkal Polytechnic" />
+    <meta name="author" content="Dumkal Polytechnic" />
     <link rel="stylesheet" href="tailwind.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700"
+      rel="stylesheet"
+    />
+    <style>
+      .gradient {
+        background: linear-gradient(90deg, #d53369 0%, #daae51 100%);
+      }
+    </style>
   </head>
-  <body>
-    <div>
-      <h1>Hello</h1>
+  <body
+    class="leading-normal tracking-normal text-white gradient"
+    style="font-family: 'Source Sans Pro', sans-serif"
+  >
+    <!--Nav-->
+    <nav id="header" class="fixed w-full z-30 top-0 text-white">
+      <div
+        class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2"
+      >
+        <div class="pl-4 flex items-center">
+          <a
+            class="toggleColour text-white no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+            href="#"
+          >
+            <!-- Icon -->
+            <img src="assets/img/logo.svg" alt="logo" class="w-10 h-10" />
+            Dumkal Polytechnic
+          </a>
+        </div>
+        <div class="block lg:hidden pr-4">
+          <button
+            id="nav-toggle"
+            class="flex items-center p-1 text-pink-800 hover:text-gray-900 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+          >
+            <svg
+              class="fill-current h-6 w-6"
+              viewBox="0 0 20 20"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
+        </div>
+        <div
+          class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20"
+          id="nav-content"
+        >
+          <ul class="list-reset lg:flex justify-end flex-1 items-center">
+            <li class="mr-3">
+              <!-- <a
+                class="inline-block py-2 px-4 text-black font-bold no-underline"
+                href="#"
+                >Active</a
+              > -->
+              <a
+                class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                href="#"
+                >Home
+              </a>
+            </li>
+            <li class="mr-3">
+              <a
+                class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                href="#facilities_id"
+                >Facilities</a
+              >
+            </li>
+            <li class="mr-3">
+              <a
+                class="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4"
+                href="#pricing_id"
+                >Pricing</a
+              >
+            </li>
+          </ul>
+          <button
+            id="navAction"
+            class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+          >
+            Contact Us
+          </button>
+        </div>
+      </div>
+      <hr class="border-b border-gray-100 opacity-25 my-0 py-0" />
+    </nav>
+
+    <!--Hero-->
+    <div class="pt-24">
+      <div
+        class="container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center"
+      >
+        <!--Left Col-->
+        <div
+          class="flex flex-col w-full md:w-2/5 justify-center items-start text-center md:text-left"
+        >
+          <p class="uppercase tracking-loose w-full">Who are you?</p>
+          <h1 class="my-4 text-5xl font-bold leading-tight">
+            Welcome to Dumkal Polytechnic
+          </h1>
+          <p class="leading-normal text-2xl mb-8">
+            Dumkal Polytechnic was established on 2002 by Basantapur Education
+            Society (a non-profiting social welfare organization) founded by Dr.
+            Nazrul Islam (IPS Officer & a well-known litterateur of Bengali
+            prose fiction and short story today). Dumkal Polytechnic has been
+            approved by AICTE and affiliated to the West Bengal State Council of
+            Technical Education.
+          </p>
+          <button
+            class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+          >
+            Learn More
+          </button>
+        </div>
+        <!--Right Col-->
+        <div class="w-full md:w-3/5 py-6 text-center">
+          <img class="w-full md:w-4/5 z-50" src="assets/img/landing.png" />
+        </div>
+      </div>
     </div>
+    <div class="relative -mt-12 lg:-mt-24">
+      <svg
+        viewBox="0 0 1428 174"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+      >
+        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+          <g
+            transform="translate(-2.000000, 44.000000)"
+            fill="#FFFFFF"
+            fill-rule="nonzero"
+          >
+            <path
+              d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
+              opacity="0.100000001"
+            ></path>
+            <path
+              d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+              opacity="0.100000001"
+            ></path>
+            <path
+              d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
+              id="Path-4"
+              opacity="0.200000003"
+            ></path>
+          </g>
+          <g
+            transform="translate(-4.000000, 76.000000)"
+            fill="#FFFFFF"
+            fill-rule="nonzero"
+          >
+            <path
+              d="M0.457,34.035 C57.086,53.198 98.208,65.809 123.822,71.865 C181.454,85.495 234.295,90.29 272.033,93.459 C311.355,96.759 396.635,95.801 461.025,91.663 C486.76,90.01 518.727,86.372 556.926,80.752 C595.747,74.596 622.372,70.008 636.799,66.991 C663.913,61.324 712.501,49.503 727.605,46.128 C780.47,34.317 818.839,22.532 856.324,15.904 C922.689,4.169 955.676,2.522 1011.185,0.432 C1060.705,1.477 1097.39,3.129 1121.236,5.387 C1161.703,9.219 1208.621,17.821 1235.4,22.304 C1285.855,30.748 1354.351,47.432 1440.886,72.354 L1441.191,104.352 L1.121,104.031 L0.457,34.035 Z"
+            ></path>
+          </g>
+        </g>
+      </svg>
+    </div>
+    <section id="facilities_id" class="bg-white border-b py-8">
+      <div class="container max-w-5xl mx-auto m-8">
+        <h1
+          class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800"
+        >
+          Our Facilities
+        </h1>
+        <div class="w-full mb-4">
+          <div
+            class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
+          ></div>
+        </div>
+        <div class="flex flex-wrap">
+          <div class="w-5/6 sm:w-1/2 p-6">
+            <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+              Library and Information Centre
+            </h3>
+            <p class="text-gray-600 mb-8">
+              Our institute have a very well equipped library with sufficient
+              number of study books according to the courses. Along with the
+              study books our library has various journals, magazines related to
+              the courses to get in touch with the real world & industry
+              happenings, news of various new technologies, inventions etc. The
+              student to book ratio is sufficient. With the library we have the
+              Reading Room facility where students can study the library books,
+              take notes etc. Our Library has proper study books of each courses
+              which are helping our students to cover the syllabus along with
+              gathering knowledge.
+              <br />
+            </p>
+          </div>
+          <div class="w-full sm:w-1/2 p-6">
+            <img src="assets/img/img-01.svg" alt="Library" />
+          </div>
+        </div>
+        <div class="flex flex-wrap flex-col-reverse sm:flex-row">
+          <div class="w-full sm:w-1/2 p-6 mt-6">
+            <img src="assets/img/img-02.svg" alt="Hostel" />
+          </div>
+          <div class="w-full sm:w-1/2 p-6 mt-6">
+            <div class="align-middle">
+              <h3 class="text-3xl text-gray-800 font-bold leading-none mb-3">
+                Hostel Facilities
+              </h3>
+              <p class="text-gray-600 mb-8">
+                The college campus is a completely residential educational
+                township. The Polytechnic has the hostel facilities for both
+                boys and girls. The college has Two Hostels for boys and One
+                Hostel for girls (For 1st,2nd and 3rd year students). Each
+                hostel has wardens . The rooms are large and airy with the best
+                conveniences. Mess facilities are available and students can get
+                wholesome, nutritious food of their choice. A homely ambience
+                with rich educational function is provided. A common room is
+                provided in every hostel with arrangements of Indoor games.There
+                is also a common ground for playing outdoor games like
+                football,cricket,volleyball etc.
+                <span class="font-bold">RO</span> water purifier systems & 24
+                hr. <span class="font-bold">wi-fi</span> internet connection are
+                also provided.
+                <br />
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+    <!-- Message -->
+    <div class="bg-indigo-900 text-center py-4 lg:px-4">
+        <div class="p-2 bg-indigo-800 items-center text-indigo-100 leading-none lg:rounded-full flex lg:inline-flex" role="alert">
+          <span class="flex rounded-full bg-indigo-500 uppercase px-2 py-1 text-xs font-bold mr-3">New</span>
+          <span class="font-semibold mr-2 text-left flex-auto">Admission is open</span>
+          <svg class="fill-current opacity-75 h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.95 10.707l.707-.707L8 4.343 6.586 5.757 10.828 10l-4.242 4.243L8 15.657l4.95-4.95z"/></svg>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="bg-white border-b py-8">
+      <div class="container mx-auto flex flex-wrap pt-4 pb-12">
+        <h1
+          class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800"
+        >
+          Title
+        </h1>
+        <div class="w-full mb-4">
+          <div
+            class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
+          ></div>
+        </div>
+        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+          <div
+            class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow"
+          >
+            <a href="#" class="flex flex-wrap no-underline hover:no-underline">
+              <p class="w-full text-gray-600 text-xs md:text-sm px-6">
+                xGETTING STARTED
+              </p>
+              <div class="w-full font-bold text-xl text-gray-800 px-6">
+                Lorem ipsum dolor sit amet.
+              </div>
+              <p class="text-gray-800 text-base px-6 mb-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                at ipsum eu nunc commodo posuere et sit amet ligula.
+              </p>
+            </a>
+          </div>
+          <div
+            class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6"
+          >
+            <div class="flex items-center justify-start">
+              <button
+                class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+              >
+                Action
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+          <div
+            class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow"
+          >
+            <a href="#" class="flex flex-wrap no-underline hover:no-underline">
+              <p class="w-full text-gray-600 text-xs md:text-sm px-6">
+                xGETTING STARTED
+              </p>
+              <div class="w-full font-bold text-xl text-gray-800 px-6">
+                Lorem ipsum dolor sit amet.
+              </div>
+              <p class="text-gray-800 text-base px-6 mb-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                at ipsum eu nunc commodo posuere et sit amet ligula.
+              </p>
+            </a>
+          </div>
+          <div
+            class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6"
+          >
+            <div class="flex items-center justify-center">
+              <button
+                class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+              >
+                Action
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
+          <div
+            class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow"
+          >
+            <a href="#" class="flex flex-wrap no-underline hover:no-underline">
+              <p class="w-full text-gray-600 text-xs md:text-sm px-6">
+                xGETTING STARTED
+              </p>
+              <div class="w-full font-bold text-xl text-gray-800 px-6">
+                Lorem ipsum dolor sit amet.
+              </div>
+              <p class="text-gray-800 text-base px-6 mb-5">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+                at ipsum eu nunc commodo posuere et sit amet ligula.
+              </p>
+            </a>
+          </div>
+          <div
+            class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6"
+          >
+            <div class="flex items-center justify-end">
+              <button
+                class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+              >
+                Action
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <section id="pricing_id" class="bg-gray-100 py-8">
+      <div class="container mx-auto px-2 pt-4 pb-12 text-gray-800">
+        <h1
+          class="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800"
+        >
+          Pricing
+        </h1>
+        <div class="w-full mb-4">
+          <div
+            class="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"
+          ></div>
+        </div>
+        <div
+          class="flex flex-col sm:flex-row justify-center pt-12 my-12 sm:my-4"
+        >
+          <div
+            class="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4"
+          >
+            <div
+              class="flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow"
+            >
+              <div class="p-8 text-3xl font-bold text-center border-b-4">
+                Free
+              </div>
+              <ul class="w-full text-center text-sm">
+                <li class="border-b py-4 font-bold">Nothing</li>
+              </ul>
+            </div>
+            <div
+              class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6"
+            >
+              <div
+                class="w-full pt-6 text-3xl text-gray-600 font-bold text-center"
+              >
+                $0
+                <span class="text-base"></span>
+              </div>
+              <div class="flex items-center justify-center">
+                <button
+                  class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+                >
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col w-5/6 lg:w-1/3 mx-auto lg:mx-0 rounded-lg bg-white mt-4 sm:-mt-6 shadow-lg z-10"
+          >
+            <div
+              class="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow"
+            >
+              <div class="w-full p-8 text-3xl font-bold text-center">
+                Regular
+              </div>
+              <div class="h-1 w-full gradient my-0 py-0 rounded-t"></div>
+              <ul class="w-full text-center text-base font-bold">
+                <li class="border-b py-4">3 Years long course</li>
+                <li class="border-b py-4">All courses available</li>
+                <li class="border-b py-4">Hostel available</li>
+              </ul>
+            </div>
+            <div
+              class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6"
+            >
+              <div class="w-full pt-6 text-4xl font-bold text-center">
+                $99.99
+                <span class="text-base">/ per student</span>
+              </div>
+              <div class="flex items-center justify-center">
+                <button
+                  class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+                >
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col w-5/6 lg:w-1/4 mx-auto lg:mx-0 rounded-none lg:rounded-l-lg bg-white mt-4"
+          >
+            <div
+              class="flex-1 bg-white text-gray-600 rounded-t rounded-b-none overflow-hidden shadow"
+            >
+              <div class="p-8 text-3xl font-bold text-center border-b-4">
+                Lateral Entry
+              </div>
+              <ul class="w-full text-center text-sm">
+                <li class="border-b py-4 font-bold">2 Years long course</li>
+                <li class="border-b py-4 font-bold">All courses available</li>
+                <li class="border-b py-4 font-bold">Hostel available</li>
+              </ul>
+            </div>
+            <div
+              class="flex-none mt-auto bg-white rounded-b rounded-t-none overflow-hidden shadow p-6"
+            >
+              <div
+                class="w-full pt-6 text-3xl text-gray-600 font-bold text-center"
+              >
+                $79.99
+                <span class="text-base">/ per student</span>
+              </div>
+              <div class="flex items-center justify-center">
+                <button
+                  class="mx-auto lg:mx-0 hover:underline gradient text-white font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+                >
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Change the colour #f8fafc to match the previous section colour -->
+    <svg
+      class="wave-top"
+      viewBox="0 0 1439 147"
+      version="1.1"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+    >
+      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g transform="translate(-1.000000, -14.000000)" fill-rule="nonzero">
+          <g class="wave" fill="#f8fafc">
+            <path
+              d="M1440,84 C1383.555,64.3 1342.555,51.3 1317,45 C1259.5,30.824 1206.707,25.526 1169,22 C1129.711,18.326 1044.426,18.475 980,22 C954.25,23.409 922.25,26.742 884,32 C845.122,37.787 818.455,42.121 804,45 C776.833,50.41 728.136,61.77 713,65 C660.023,76.309 621.544,87.729 584,94 C517.525,105.104 484.525,106.438 429,108 C379.49,106.484 342.823,104.484 319,102 C278.571,97.783 231.737,88.736 205,84 C154.629,75.076 86.296,57.743 0,32 L0,0 L1440,0 L1440,84 Z"
+            ></path>
+          </g>
+          <g transform="translate(1.000000, 15.000000)" fill="#FFFFFF">
+            <g
+              transform="translate(719.500000, 68.500000) rotate(-180.000000) translate(-719.500000, -68.500000) "
+            >
+              <path
+                d="M0,0 C90.7283404,0.927527913 147.912752,27.187927 291.910178,59.9119003 C387.908462,81.7278826 543.605069,89.334785 759,82.7326078 C469.336065,156.254352 216.336065,153.6679 0,74.9732496"
+                opacity="0.100000001"
+              ></path>
+              <path
+                d="M100,104.708498 C277.413333,72.2345949 426.147877,52.5246657 546.203633,45.5787101 C666.259389,38.6327546 810.524845,41.7979068 979,55.0741668 C931.069965,56.122511 810.303266,74.8455141 616.699903,111.243176 C423.096539,147.640838 250.863238,145.462612 100,104.708498 Z"
+                opacity="0.100000001"
+              ></path>
+              <path
+                d="M1046,51.6521276 C1130.83045,29.328812 1279.08318,17.607883 1439,40.1656806 L1439,120 C1271.17211,77.9435312 1140.17211,55.1609071 1046,51.6521276 Z"
+                opacity="0.200000003"
+              ></path>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+    <section id="contactus" class="container mx-auto text-center py-6 mb-12">
+      <h1
+        class="w-full my-2 text-5xl font-bold leading-tight text-center text-white"
+      >
+        Admission
+      </h1>
+      <div class="w-full mb-4">
+        <div
+          class="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"
+        ></div>
+      </div>
+      <p class="my-4 text-2xl leading-tight">
+        There are four courses.
+        <ul class="text-sm list-disc">
+          <li>Mechanical Engineering</li>
+          <li>Electriical Engineering</li>
+          <li>Civil Engineering</li>
+          <li>Computer Science & Technology</li>
+        </ul>
+        <br/>
+        <br/>
+        <span class="text-xl font-bold">
+            Contact Information
+        </span>
+        <br/>
+        <address>
+            Dumkal Polytechnic
+            P.O. -Basantapur,
+            Dist. - Murshidabad
+            Pin. -742406
+        </address>
+        <address>
+            Telephone : (03481) 231189, 230899, 231201
+            Fax :(03481) 231189, Mobile No:-9735272191,8001158070, 9732588805, 9734369670            
+        </address>
+        <address>
+            Basantapur Education Society
+            Ph :- 03481-231201/230033
+            Fax :- 03481-231188
+            E-Mail :- dietnet@hotmail.com
+        </address>
+    </p>
+      <button
+        class="mx-auto lg:mx-0 hover:underline bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg focus:outline-none focus:shadow-outline transform transition hover:scale-105 duration-300 ease-in-out"
+      >
+        Contact Us
+      </button>
+    </section>
+    <!--Footer-->
+    <footer class="bg-white">
+      <div class="container mx-auto px-8">
+        <div class="w-full flex flex-col md:flex-row py-6">
+          <div class="flex-1 mb-6 text-black">
+            <a
+              class="text-pink-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"
+              href="#"
+            >
+              <!-- Icon -->
+              <img src="assets/img/logo.svg" alt="logo" class="w-10 h-10" />
+              Dumkal Polytechnic
+            </a>
+          </div>
+          <div class="flex-1">
+            <p class="uppercase text-gray-500 md:mb-6">Links</p>
+            <ul class="list-reset mb-6">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a
+                  href="#"
+                  class="no-underline hover:underline text-gray-800 hover:text-pink-500"
+                  >Home
+                </a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a
+                  href="#faq"
+                  class="no-underline hover:underline text-gray-800 hover:text-pink-500"
+                  >FAQ
+                </a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a
+                  href="#help"
+                  class="no-underline hover:underline text-gray-800 hover:text-pink-500"
+                  >Help
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex-1">
+            <p class="uppercase text-gray-500 md:mb-6">Websites</p>
+            <ul class="list-reset mb-6">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a
+                  href="2ndYear2021"
+                  class="no-underline hover:underline text-gray-800 hover:text-pink-500"
+                  >2nd Year
+                  </a>
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a
+                  href="3rdYear2021"
+                  class="no-underline hover:underline text-gray-800 hover:text-pink-500"
+                  >3rd Year
+                  </a>
+              </li>
+            </ul>
+          </div>
+          <div class="flex-1">
+            <p class="uppercase text-gray-500 md:mb-6">Social</p>
+            <ul class="list-reset mb-6">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a
+                  href="#"
+                  class="no-underline hover:underline text-gray-800 hover:text-pink-500"
+                  >Facebook</a
+                >
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a
+                  href="#"
+                  class="no-underline hover:underline text-gray-800 hover:text-pink-500"
+                  >Linkedin</a
+                >
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a
+                  href="#"
+                  class="no-underline hover:underline text-gray-800 hover:text-pink-500"
+                  >Twitter</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="flex-1">
+            <p class="uppercase text-gray-500 md:mb-6">Company</p>
+            <ul class="list-reset mb-6">
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a
+                  href="#"
+                  class="no-underline hover:underline text-gray-800 hover:text-pink-500"
+                  >Official Blog</a
+                >
+              </li>
+              <li class="mt-2 inline-block mr-2 md:block md:mr-0">
+                <a
+                  href="#"
+                  class="no-underline hover:underline text-gray-800 hover:text-pink-500"
+                  >About Us</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <a
+        href="#copyright"
+        class="text-gray-500"
+        >Copyright © 2021, All rights reversed</a
+      >
+      <br/>
+      <br/>
+      <div class="flex items-center bg-blue-500 text-white text-sm font-bold px-4 py-3" role="alert">
+        <svg class="fill-current w-4 h-4 mr-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M12.432 0c1.34 0 2.01.912 2.01 1.957 0 1.305-1.164 2.512-2.679 2.512-1.269 0-2.009-.75-1.974-1.99C9.789 1.436 10.67 0 12.432 0zM8.309 20c-1.058 0-1.833-.652-1.093-3.524l1.214-5.092c.211-.814.246-1.141 0-1.141-.317 0-1.689.562-2.502 1.117l-.528-.88c2.572-2.186 5.531-3.467 6.801-3.467 1.057 0 1.233 1.273.705 3.23l-1.391 5.352c-.246.945-.141 1.271.106 1.271.317 0 1.357-.392 2.379-1.207l.6.814C12.098 19.02 9.365 20 8.309 20z"/></svg>
+        <p>Website is under active development</p>
+      </div>
+      <br/>
+      </div>
+    </footer>
+    <!-- jQuery if you need it
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        -->
+    <script>
+      var scrollpos = window.scrollY;
+      var header = document.getElementById("header");
+      var navcontent = document.getElementById("nav-content");
+      var navaction = document.getElementById("navAction");
+      var brandname = document.getElementById("brandname");
+      var toToggle = document.querySelectorAll(".toggleColour");
+
+      document.addEventListener("scroll", function () {
+        /*Apply classes for slide in bar*/
+        scrollpos = window.scrollY;
+
+        if (scrollpos > 10) {
+          header.classList.add("bg-white");
+          navaction.classList.remove("bg-white");
+          navaction.classList.add("gradient");
+          navaction.classList.remove("text-gray-800");
+          navaction.classList.add("text-white");
+          //Use to switch toggleColour colours
+          for (var i = 0; i < toToggle.length; i++) {
+            toToggle[i].classList.add("text-gray-800");
+            toToggle[i].classList.remove("text-white");
+          }
+          header.classList.add("shadow");
+          navcontent.classList.remove("bg-gray-100");
+          navcontent.classList.add("bg-white");
+        } else {
+          header.classList.remove("bg-white");
+          navaction.classList.remove("gradient");
+          navaction.classList.add("bg-white");
+          navaction.classList.remove("text-white");
+          navaction.classList.add("text-gray-800");
+          //Use to switch toggleColour colours
+          for (var i = 0; i < toToggle.length; i++) {
+            toToggle[i].classList.add("text-white");
+            toToggle[i].classList.remove("text-gray-800");
+          }
+
+          header.classList.remove("shadow");
+          navcontent.classList.remove("bg-white");
+          navcontent.classList.add("bg-gray-100");
+        }
+      });
+    </script>
+    <script>
+      /*Toggle dropdown list*/
+      /*https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8*/
+
+      var navMenuDiv = document.getElementById("nav-content");
+      var navMenu = document.getElementById("nav-toggle");
+
+      document.onclick = check;
+      function check(e) {
+        var target = (e && e.target) || (event && event.srcElement);
+
+        //Nav Menu
+        if (!checkParent(target, navMenuDiv)) {
+          // click NOT on the menu
+          if (checkParent(target, navMenu)) {
+            // click on the link
+            if (navMenuDiv.classList.contains("hidden")) {
+              navMenuDiv.classList.remove("hidden");
+            } else {
+              navMenuDiv.classList.add("hidden");
+            }
+          } else {
+            // click both outside link and outside menu, hide menu
+            navMenuDiv.classList.add("hidden");
+          }
+        }
+      }
+      function checkParent(t, elm) {
+        while (t.parentNode) {
+          if (t == elm) {
+            return true;
+          }
+          t = t.parentNode;
+        }
+        return false;
+      }
+    </script>
   </body>
 </html>
